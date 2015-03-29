@@ -14,6 +14,18 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureConfiguration", "Azure
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureConfigGenerator", "AzureConfigGenerator\AzureConfigGenerator.csproj", "{27D2A3C0-DE2E-49B5-9ECB-3BB11C266955}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{882FC9D8-DE90-496A-8674-F8D7B3183321}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3AAB1BB6-0A41-4483-BE63-4483D4D0B8F5}"
+	ProjectSection(SolutionItems) = preProject
+		AzureStronglyTypedConfigs.nuspec = AzureStronglyTypedConfigs.nuspec
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
