@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="StronglyTypedAzureConfigs" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="4" osVersion="*" schemaVersion="2014-06.2.4">
+  <Role name="WorkerRole1">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="NumberOfThreads" value="100" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="other storage account" />
+      <Setting name="BlobStorageAccounts_item0" value="baseconfigstorageaccount1" />
+      <Setting name="BlobStorageAccounts_item1" value="baseconfigstorageaccount2" />
+      <Setting name="BlobStorageAccounts_item2" value="" />
+      <Setting name="BlobStorageAccounts_item3" value="" />
+      <Setting name="BlobStorageAccounts_item4" value="" />
+      <Setting name="BlobStorageAccounts_item5" value="" />
+      <Setting name="BlobStorageAccounts_item6" value="" />
+      <Setting name="BlobStorageAccounts_item7" value="" />
+      <Setting name="BlobStorageAccounts_item8" value="" />
+      <Setting name="BlobStorageAccounts_item9" value="" />
+      <Setting name="BlobStorageAccounts_item10" value="" />
+      <Setting name="BlobStorageAccounts_item11" value="" />
+      <Setting name="BlobStorageAccounts_item12" value="" />
+      <Setting name="BlobStorageAccounts_item13" value="" />
+      <Setting name="BlobStorageAccounts_item14" value="" />
+      <Setting name="BlobStorageAccounts_item15" value="" />
+      <Setting name="BlobStorageAccounts_item16" value="" />
+      <Setting name="BlobStorageAccounts_item17" value="" />
+      <Setting name="BlobStorageAccounts_item18" value="" />
+      <Setting name="BlobStorageAccounts_item19" value="" />
+      <Setting name="BlobStorageAccounts_item20" value="" />
+      <Setting name="BlobStorageAccounts_item21" value="" />
+      <Setting name="BlobStorageAccounts_item22" value="" />
+      <Setting name="BlobStorageAccounts_item23" value="" />
+      <Setting name="BlobStorageAccounts_item24" value="" />
+      <Setting name="BlobStorageAccounts_item25" value="" />
+      <Setting name="BlobStorageAccounts_item26" value="" />
+    </ConfigurationSettings>
+  </Role>
+</ServiceConfiguration>
