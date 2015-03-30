@@ -27,4 +27,48 @@ public class APIServiceConfiguration
     public string MonitoringStorageAccount { get; set; }
 }
 ```
+3. Create environments matching the Azure Cloud Service environments. Check Sample projects: src\SampleUsage\
+```C#
+public class CloudEnvironmentConfig : APIServiceConfiguration, IAzureCloudServiceEnvironment
+{
+    public CloudEnvironmentConfig()
+    {
+       	CloudServiceConfigsFolder = "ApiServiceAzure";
+       	EnvironmentName = "Cloud"; // Name of the cscfg environment that will represent this class
+      	NumberOfInstances = 10;
+        Timeout = 10;
+        MonitoringStorageAccount = "prod account";
+    }
 
+    public string CloudServiceConfigsFolder { get; private set; }
+
+    public string EnvironmentName { get; private set; }
+
+    public int NumberOfInstances { get; private set; }
+}
+
+public class LocalnvironmentConfig : APIServiceConfiguration, IAzureCloudServiceEnvironment
+{
+    public LocalEnvironmentConfig()
+    {
+       	CloudServiceConfigsFolder = "ApiServiceAzure";
+       	EnvironmentName = "Local";
+      	NumberOfInstances = 1;
+        Timeout = 10;
+        MonitoringStorageAccount = "prod account";
+    }
+
+    public string CloudServiceConfigsFolder { get; private set; }
+
+    public string EnvironmentName { get; private set; }
+
+    public int NumberOfInstances { get; private set; }
+}
+
+```
+4. Add After build target to the .csproj so configs are generated on build automatically every time you change the environments or configs classes
+```xml
+ <Target Name="AfterBuild">
+    <Exec Command="&quot;$(SolutionDir)\packages\AzureStronglyTypedConfigs.1.0.0\tools\AzureConfigGenerator.exe&quot; &quot;$(ProjectDir)$(OutDir)\ApiWorkerRole.dll&quot; &quot;$(SolutionDir) &quot; " IgnoreExitCode="false" />
+ </Target>
+```
