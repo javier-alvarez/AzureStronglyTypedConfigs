@@ -26,6 +26,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		AzureStronglyTypedConfigs.nuspec = AzureStronglyTypedConfigs.nuspec
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A36D544C-8753-42C0-B0E6-30E1303254B7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{5A68F9EF-5E38-4C71-B8B2-0D02868470F4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "demo", "demo", "{046B8D28-1B1B-47AD-9953-0656CA3574BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureConfigGeneratorTests", "AzureConfigGeneratorTests\AzureConfigGeneratorTests.csproj", "{E756A6FE-3332-4791-BEE3-32EAFAE1BBBE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,8 +56,19 @@ Global
 		{27D2A3C0-DE2E-49B5-9ECB-3BB11C266955}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{27D2A3C0-DE2E-49B5-9ECB-3BB11C266955}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{27D2A3C0-DE2E-49B5-9ECB-3BB11C266955}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E756A6FE-3332-4791-BEE3-32EAFAE1BBBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E756A6FE-3332-4791-BEE3-32EAFAE1BBBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E756A6FE-3332-4791-BEE3-32EAFAE1BBBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E756A6FE-3332-4791-BEE3-32EAFAE1BBBE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{ECC2788D-3EA8-4CE8-9AD5-E99829EA2078} = {046B8D28-1B1B-47AD-9953-0656CA3574BD}
+		{5016E719-FBE7-4951-A559-59413D689D77} = {046B8D28-1B1B-47AD-9953-0656CA3574BD}
+		{AF1C0345-5EF9-4FFF-BDDE-DE6C12EACD6A} = {A36D544C-8753-42C0-B0E6-30E1303254B7}
+		{27D2A3C0-DE2E-49B5-9ECB-3BB11C266955} = {A36D544C-8753-42C0-B0E6-30E1303254B7}
+		{E756A6FE-3332-4791-BEE3-32EAFAE1BBBE} = {5A68F9EF-5E38-4C71-B8B2-0D02868470F4}
 	EndGlobalSection
 EndGlobal

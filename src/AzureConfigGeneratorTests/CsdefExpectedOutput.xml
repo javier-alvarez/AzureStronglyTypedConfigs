@@ -1,0 +1,30 @@
+﻿<ConfigurationSettings>
+  <Setting name="NumberOfThreads"/>
+  <Setting name="BlobStorageAccounts_item0"/>
+  <Setting name="BlobStorageAccounts_item1"/>
+  <Setting name="BlobStorageAccounts_item2"/>
+  <Setting name="BlobStorageAccounts_item3"/>
+  <Setting name="BlobStorageAccounts_item4"/>
+  <Setting name="BlobStorageAccounts_item5"/>
+  <Setting name="BlobStorageAccounts_item6"/>
+  <Setting name="BlobStorageAccounts_item7"/>
+  <Setting name="BlobStorageAccounts_item8"/>
+  <Setting name="BlobStorageAccounts_item9"/>
+  <Setting name="BlobStorageAccounts_item10"/>
+  <Setting name="BlobStorageAccounts_item11"/>
+  <Setting name="BlobStorageAccounts_item12"/>
+  <Setting name="BlobStorageAccounts_item13"/>
+  <Setting name="BlobStorageAccounts_item14"/>
+  <Setting name="BlobStorageAccounts_item15"/>
+  <Setting name="BlobStorageAccounts_item16"/>
+  <Setting name="BlobStorageAccounts_item17"/>
+  <Setting name="BlobStorageAccounts_item18"/>
+  <Setting name="BlobStorageAccounts_item19"/>
+  <Setting name="BlobStorageAccounts_item20"/>
+  <Setting name="BlobStorageAccounts_item21"/>
+  <Setting name="BlobStorageAccounts_item22"/>
+  <Setting name="BlobStorageAccounts_item23"/>
+  <Setting name="BlobStorageAccounts_item24"/>
+  <Setting name="BlobStorageAccounts_item25"/>
+  <Setting name="BlobStorageAccounts_item26"/>
+</ConfigurationSettings>
