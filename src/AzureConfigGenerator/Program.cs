@@ -79,12 +79,20 @@
             XmlDocument document = new XmlDocument();
             document.Load(pathToFile);
             XPathNavigator navigator = document.CreateNavigator();
+            bool lastMoveGood = false;
             foreach (var element in pathToConfigSettings)
             {
-                navigator.MoveToChild(element, xmlnamespace);
+                lastMoveGood = navigator.MoveToChild(element, xmlnamespace);
+            }
+            if (lastMoveGood)
+            {
+                navigator.ReplaceSelf(xmlToReplace);
+            }
+            else
+            {
+                navigator.AppendChild(xmlToReplace);
             }
 
-            navigator.ReplaceSelf(xmlToReplace);
             document.Save(pathToFile);
         }
     }
