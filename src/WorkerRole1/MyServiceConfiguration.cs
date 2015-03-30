@@ -1,11 +1,8 @@
 ﻿namespace AzureConfiguration
 {
     using System.Collections.Generic;
-    interface IMyServiceConfiguration
-    {
-        string MonitoringStorageAccount { get; }
-        int NumberOfThreads { get; }
-    }
+
+    using AzureStronglyTypedConfigs;
 
     public class MyServiceConfiguration : IMyServiceConfiguration
     {

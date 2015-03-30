@@ -7,7 +7,7 @@
     <ProjectGuid>{27D2A3C0-DE2E-49B5-9ECB-3BB11C266955}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AzureConfigGenerator</RootNamespace>
+    <RootNamespace>AzureStronglyTypedConfigs</RootNamespace>
     <AssemblyName>AzureConfigGenerator</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

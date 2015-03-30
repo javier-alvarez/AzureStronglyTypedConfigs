@@ -14,6 +14,8 @@ namespace WorkerRole1
 {
     using AzureConfiguration;
 
+    using AzureStronglyTypedConfigs;
+
     public class WorkerRole : RoleEntryPoint
     {
         private readonly CancellationTokenSource cancellationTokenSource = new CancellationTokenSource();

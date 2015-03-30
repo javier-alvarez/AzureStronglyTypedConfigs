@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace AzureConfiguration
+﻿namespace AzureStronglyTypedConfigs
 {
+    using System;
+    using System.Collections;
+
     public static class TypeExtensions
     {
         public static bool IsIEnumerable(this Type type)

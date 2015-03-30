@@ -5,10 +5,11 @@
     using System.IO;
     using System.Xml;
 
-    using AzureConfigGenerator;
-
     using Microsoft.VisualStudio.TestTools.UnitTesting;
     using System.Xml.Linq;
+
+    using AzureStronglyTypedConfigs;
+
     using WorkerRole1;
 
     [TestClass]

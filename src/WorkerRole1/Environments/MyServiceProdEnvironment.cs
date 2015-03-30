@@ -7,6 +7,8 @@
     using System.Text;
     using System.Threading.Tasks;
 
+    using AzureStronglyTypedConfigs;
+
     public class MyServiceProdEnvironment : MyServiceConfiguration, IAzureCloudServiceEnvironment
     {
         public MyServiceProdEnvironment()

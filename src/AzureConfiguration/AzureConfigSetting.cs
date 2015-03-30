@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
-using System.Text;
-
-namespace AzureConfiguration
+﻿namespace AzureStronglyTypedConfigs
 {
+    using System;
+    using System.Linq;
+    using System.Reflection;
+
     public class AzureConfigSetting : Attribute
     {
         private const int DefaultExtraCapacity=5;

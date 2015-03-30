@@ -8,6 +8,8 @@ namespace WorkerRole1
 {
     using AzureConfiguration;
 
+    using AzureStronglyTypedConfigs;
+
     public class MyServiceTestEnvironment : MyServiceConfiguration, IAzureCloudServiceEnvironment
     {
         public MyServiceTestEnvironment()
