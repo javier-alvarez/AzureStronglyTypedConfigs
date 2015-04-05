@@ -24,6 +24,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -33,6 +34,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.Data.Edm, Version=5.6.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
@@ -103,7 +105,9 @@
   </Target>
   -->
   <Target Name="AfterBuild">
-    <Exec Command="&quot;$(SolutionDir)\AzureConfigGenerator\bin\Debug\AzureConfigGenerator.exe&quot; &quot;$(ProjectDir)$(OutDir)\WorkerRole1.dll&quot; &quot;$(SolutionDir) &quot; " IgnoreExitCode="false" />
+    <Exec Command="&quot;$(SolutionDir)\AzureConfigGenerator\bin\Debug\AzureConfigGenerator.exe&quot; &quot;$(ProjectDir)$(OutDir)\WorkerRole1.dll&quot; &quot;$(SolutionDir)&quot;" IgnoreExitCode="false">
+      <Output TaskParameter="ConsoleOutput" PropertyName="OutputOfExec" />
+    </Exec>
   </Target>
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
