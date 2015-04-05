@@ -83,6 +83,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\AzureConfigGenerator\AzureConfigGenerator.csproj">
+      <Project>{27d2a3c0-de2e-49b5-9ecb-3bb11c266955}</Project>
+      <Name>AzureConfigGenerator</Name>
+    </ProjectReference>
     <ProjectReference Include="..\AzureConfiguration\AzureConfiguration.csproj">
       <Project>{AF1C0345-5EF9-4FFF-BDDE-DE6C12EACD6A}</Project>
       <Name>AzureConfiguration</Name>
