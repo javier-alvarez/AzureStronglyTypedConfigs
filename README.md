@@ -1,3 +1,4 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/6bw9qovlxgbtpkb5?svg=true)](https://ci.appveyor.com/project/javier-alvarez/azurestronglytypedconfigs)
 # AzureStronglyTypedConfigs
 ## Project goals
 1. Simple type safe configuration system for Azure services
@@ -55,7 +56,7 @@ public class LocalnvironmentConfig : APIServiceConfiguration, IAzureCloudService
        	EnvironmentName = "Local";
       	NumberOfInstances = 1;
         Timeout = 10;
-        MonitoringStorageAccount = "prod account";
+        MonitoringStorageAccount = "test account";
     }
 
     public string CloudServiceConfigsFolder { get; private set; }
