@@ -23,7 +23,7 @@ namespace WorkerRole1
 
         public string CloudServiceConfigsFolder { get; private set; }
 
-        public string EnvironmentName { get; private set; }
+        public string EnvironmentName { get; protected set; }
 
         public int NumberOfInstances { get; private set; }
     }
