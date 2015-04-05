@@ -105,7 +105,7 @@
   </Target>
   -->
   <Target Name="AfterBuild">
-    <Exec Command="&quot;$(SolutionDir)\AzureConfigGenerator\bin\Debug\AzureConfigGenerator.exe&quot; &quot;$(ProjectDir)$(OutDir)\WorkerRole1.dll&quot; &quot;$(SolutionDir)&quot;" IgnoreExitCode="false">
+    <Exec Command='$(SolutionDir)AzureConfigGenerator\bin\Debug\AzureConfigGenerator.exe $(ProjectDir)$(OutDir)\WorkerRole1.dll $(SolutionDir)' IgnoreExitCode="false">
       <Output TaskParameter="ConsoleOutput" PropertyName="OutputOfExec" />
     </Exec>
   </Target>
