@@ -1,4 +1,5 @@
 [![Build status](https://ci.appveyor.com/api/projects/status/6bw9qovlxgbtpkb5?svg=true)](https://ci.appveyor.com/project/javier-alvarez/azurestronglytypedconfigs)
+[![NuGet](https://img.shields.io/nuget/v/AzureStronglyTypedConfigs.svg?style=flat)](https://www.nuget.org/packages/AzureStronglyTypedConfigs/)
 # AzureStronglyTypedConfigs
 ## Project goals
 1. Simple type safe configuration system for Azure services

@@ -8,7 +8,7 @@
     <owners>Javier Alvarez-Valle</owners>
     <licenseUrl>https://github.com/javier-alvarez/AzureStronglyTypedConfigs/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/javier-alvarez/AzureStronglyTypedConfigs</projectUrl>
-    <iconUrl>https://github.com/javier-alvarez/AzureStronglyTypedConfigs/src/icon.png</iconUrl>
+    <iconUrl>https://github.com/javier-alvarez/AzureStronglyTypedConfigs/blob/master/src/icon.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Strongly typed config for Azure Cloud Services. Code generation of Settings: cscfg and csdef and reader</description>
     <copyright>Copyright 2015</copyright>
