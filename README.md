@@ -81,6 +81,9 @@
 5. Read config on the WorkerRole
 	```C#
 	 var config = new APIServiceConfiguration();
- 
+	 
+	 // Load all the fields from the cscfg
 	 AzureConfigurationReader.ReadConfig(config);
+
+	 // We can use the config 
 	 ```
