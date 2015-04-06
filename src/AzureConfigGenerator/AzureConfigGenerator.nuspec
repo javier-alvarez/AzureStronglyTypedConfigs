@@ -1,19 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
-    <metadata>
-        <id>AzureStronglyTypedConfigs</id>
-        <version>$version$</version>
-        <authors>Javier Alvarez-Valle</authors>
-        <owners>Javier Alvarez-Valle</owners>
-        <licenseUrl>https://github.com/javier-alvarez/AzureStronglyTypedConfigs/blob/master/LICENSE</licenseUrl>
-        <projectUrl>https://github.com/javier-alvarez/AzureStronglyTypedConfigs</projectUrl>
-        <iconUrl>https://github.com/javier-alvarez/AzureStronglyTypedConfigs/src/icon.png</iconUrl>
-        <requireLicenseAcceptance>false</requireLicenseAcceptance>
-        <description>Strongly typed config for Azure Cloud Services. Code generation of Settings: cscfg and csdef and reader</description>
-        <copyright>Copyright 2015</copyright>
-        <tags>Azure Configuration</tags>
-        <dependencies>
-            <dependency id="Microsoft.WindowsAzure.ConfigurationManager" version="3.1.0" />
-        </dependencies>
-    </metadata>
+  <metadata>
+    <id>AzureStronglyTypedConfigs</id>
+    <version>$version$</version>
+    <title>AzureStronglyTypedConfigs</title>
+    <authors>Javier Alvarez-Valle</authors>
+    <owners>Javier Alvarez-Valle</owners>
+    <licenseUrl>https://github.com/javier-alvarez/AzureStronglyTypedConfigs/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/javier-alvarez/AzureStronglyTypedConfigs</projectUrl>
+    <iconUrl>https://github.com/javier-alvarez/AzureStronglyTypedConfigs/src/icon.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Strongly typed config for Azure Cloud Services. Code generation of Settings: cscfg and csdef and reader</description>
+    <copyright>Copyright 2015</copyright>
+    <tags>Azure Configuration strongly typed configs code generated csdef cscfg</tags>
+    <dependencies>
+      <dependency id="Microsoft.WindowsAzure.ConfigurationManager" version="3.1.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="bin\Release\*.dll" target="lib\net451" />
+  </files>
 </package>
