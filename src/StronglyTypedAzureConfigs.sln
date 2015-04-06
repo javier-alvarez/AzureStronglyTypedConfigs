@@ -24,6 +24,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3AAB1BB6-0A41-4483-BE63-4483D4D0B8F5}"
 	ProjectSection(SolutionItems) = preProject
 		AzureConfigGenerator\AzureConfigGenerator.nuspec = AzureConfigGenerator\AzureConfigGenerator.nuspec
+		..\README.md = ..\README.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A36D544C-8753-42C0-B0E6-30E1303254B7}"

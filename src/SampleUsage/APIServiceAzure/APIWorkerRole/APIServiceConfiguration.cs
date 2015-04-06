@@ -22,6 +22,7 @@ namespace APIWorkerRole
         [AzureConfigSetting(Name = "Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString", IncludeInCSDEF = false)]
         public string MonitoringStorageAccount { get; set; }
 
-        public IEnumerable<int> Ids { get; set; } 
+        [AzureConfigSetting(Capacity = 20)]
+        public IEnumerable<int> Ids { get; set; }
     }
 }

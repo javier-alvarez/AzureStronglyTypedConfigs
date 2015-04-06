@@ -14,6 +14,19 @@
       <Setting name="Ids_item4" />
       <Setting name="Ids_item5" />
       <Setting name="Ids_item6" />
+      <Setting name="Ids_item7" />
+      <Setting name="Ids_item8" />
+      <Setting name="Ids_item9" />
+      <Setting name="Ids_item10" />
+      <Setting name="Ids_item11" />
+      <Setting name="Ids_item12" />
+      <Setting name="Ids_item13" />
+      <Setting name="Ids_item14" />
+      <Setting name="Ids_item15" />
+      <Setting name="Ids_item16" />
+      <Setting name="Ids_item17" />
+      <Setting name="Ids_item18" />
+      <Setting name="Ids_item19" />
     </ConfigurationSettings>
   </WorkerRole>
 </ServiceDefinition>
