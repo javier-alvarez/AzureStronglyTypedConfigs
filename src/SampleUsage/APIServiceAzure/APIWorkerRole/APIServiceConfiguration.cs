@@ -1,6 +1,9 @@
 ﻿using System;
 namespace APIWorkerRole
 {
+    using System.Collections;
+    using System.Collections.Generic;
+
     using AzureStronglyTypedConfigs;
 
     public class APIServiceConfiguration
@@ -18,5 +21,7 @@ namespace APIWorkerRole
 
         [AzureConfigSetting(Name = "Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString", IncludeInCSDEF = false)]
         public string MonitoringStorageAccount { get; set; }
+
+        public IEnumerable<int> Ids { get; set; } 
     }
 }

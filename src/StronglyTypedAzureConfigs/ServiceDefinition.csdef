@@ -21,18 +21,6 @@
       <Setting name="BlobStorageAccounts_item12" />
       <Setting name="BlobStorageAccounts_item13" />
       <Setting name="BlobStorageAccounts_item14" />
-      <Setting name="BlobStorageAccounts_item15" />
-      <Setting name="BlobStorageAccounts_item16" />
-      <Setting name="BlobStorageAccounts_item17" />
-      <Setting name="BlobStorageAccounts_item18" />
-      <Setting name="BlobStorageAccounts_item19" />
-      <Setting name="BlobStorageAccounts_item20" />
-      <Setting name="BlobStorageAccounts_item21" />
-      <Setting name="BlobStorageAccounts_item22" />
-      <Setting name="BlobStorageAccounts_item23" />
-      <Setting name="BlobStorageAccounts_item24" />
-      <Setting name="BlobStorageAccounts_item25" />
-      <Setting name="BlobStorageAccounts_item26" />
     </ConfigurationSettings>
   </WorkerRole>
 </ServiceDefinition>

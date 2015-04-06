@@ -18,7 +18,7 @@
             NumberOfThreads = 500;
             MonitoringStorageAccount = "prod other storage account";
             NumberOfInstances = 10;
-            BlobStorageAccounts = new List<string> { "storageaccount1", "storageaccount2" };
+            BlobStorageAccounts = new List<string> { "storageaccount1" };
         }
 
         public string CloudServiceConfigsFolder { get; private set; }

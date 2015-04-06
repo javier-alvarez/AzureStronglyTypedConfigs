@@ -6,7 +6,7 @@
       <Setting name="NumberOfThreads" value="500" />
       <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="prod other storage account" />
       <Setting name="BlobStorageAccounts_item0" value="storageaccount1" />
-      <Setting name="BlobStorageAccounts_item1" value="storageaccount2" />
+      <Setting name="BlobStorageAccounts_item1" value="" />
       <Setting name="BlobStorageAccounts_item2" value="" />
       <Setting name="BlobStorageAccounts_item3" value="" />
       <Setting name="BlobStorageAccounts_item4" value="" />
@@ -20,18 +20,6 @@
       <Setting name="BlobStorageAccounts_item12" value="" />
       <Setting name="BlobStorageAccounts_item13" value="" />
       <Setting name="BlobStorageAccounts_item14" value="" />
-      <Setting name="BlobStorageAccounts_item15" value="" />
-      <Setting name="BlobStorageAccounts_item16" value="" />
-      <Setting name="BlobStorageAccounts_item17" value="" />
-      <Setting name="BlobStorageAccounts_item18" value="" />
-      <Setting name="BlobStorageAccounts_item19" value="" />
-      <Setting name="BlobStorageAccounts_item20" value="" />
-      <Setting name="BlobStorageAccounts_item21" value="" />
-      <Setting name="BlobStorageAccounts_item22" value="" />
-      <Setting name="BlobStorageAccounts_item23" value="" />
-      <Setting name="BlobStorageAccounts_item24" value="" />
-      <Setting name="BlobStorageAccounts_item25" value="" />
-      <Setting name="BlobStorageAccounts_item26" value="" />
     </ConfigurationSettings>
   </Role>
 </ServiceConfiguration>

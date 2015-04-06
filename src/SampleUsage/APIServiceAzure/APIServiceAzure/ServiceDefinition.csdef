@@ -7,6 +7,13 @@
     <ConfigurationSettings>
       <Setting name="ThrottlingRatio" />
       <Setting name="Timeout" />
+      <Setting name="Ids_item0" />
+      <Setting name="Ids_item1" />
+      <Setting name="Ids_item2" />
+      <Setting name="Ids_item3" />
+      <Setting name="Ids_item4" />
+      <Setting name="Ids_item5" />
+      <Setting name="Ids_item6" />
     </ConfigurationSettings>
   </WorkerRole>
 </ServiceDefinition>

@@ -6,18 +6,18 @@
 
     public class AzureConfigSetting : Attribute
     {
-        private const int DefaultExtraCapacity=5;
+        private const int DefaultCapacity = 10;
         public AzureConfigSetting()
         {
             IncludeInCSDEF = true;
-            ExtraCapacity = DefaultExtraCapacity;
+            Capacity = DefaultCapacity;
         }
 
         public string Name { get; set; }
 
         public bool IncludeInCSDEF { get; set; }
 
-        public int ExtraCapacity { get; set; }
+        public int Capacity { get; set; }
 
         public static string GetNameFromPropertyInfo(PropertyInfo propertyInfo)
         {
@@ -41,15 +41,15 @@
             return true;
         }
 
-        public static int GetExtraCapacityPropertyInfo(PropertyInfo propertyInfo)
+        public static int GetCapacityPropertyInfo(PropertyInfo propertyInfo)
         {
             var nameAttribute = propertyInfo.GetCustomAttributes(true).FirstOrDefault(x => x is AzureConfigSetting) as AzureConfigSetting;
             if (nameAttribute != null)
             {
-                return nameAttribute.ExtraCapacity;
+                return nameAttribute.Capacity;
             }
 
-            return DefaultExtraCapacity;
+            return DefaultCapacity;
         }
 
     }

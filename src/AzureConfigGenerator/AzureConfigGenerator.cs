@@ -42,15 +42,16 @@
                     {
                         // Collection type
                         var ienumerable = property.GetValue(instaceEnvironment) as IEnumerable;
+                        int capacity = AzureConfigSetting.GetCapacityPropertyInfo(property);
                         int i = 0;
                         foreach (var item in ienumerable)
                         {
                             GenerateCollectionSetting(fileType, sb, name, item, i++);
                         }
-                        int extraCapacity = AzureConfigSetting.GetExtraCapacityPropertyInfo(property);
-                        for (int j = 0; j < extraCapacity; j++)
+
+                        for (int j = i; j < capacity; j++)
                         {
-                            GenerateCollectionSetting(fileType, sb, name, string.Empty, j + i);
+                            GenerateCollectionSetting(fileType, sb, name, string.Empty, j);
                         }
                     }
                     else

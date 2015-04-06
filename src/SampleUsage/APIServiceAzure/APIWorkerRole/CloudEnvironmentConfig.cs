@@ -1,5 +1,7 @@
 ﻿namespace APIWorkerRole
 {
+    using System.Collections.Generic;
+
     using AzureStronglyTypedConfigs;
 
     public class CloudEnvironmentConfig : APIServiceConfiguration, IAzureCloudServiceEnvironment
@@ -12,6 +14,7 @@
 
             Timeout = 10;
             MonitoringStorageAccount = "prod account";
+            Ids = new List<int> { 1, 2 };
         }
 
         public string CloudServiceConfigsFolder { get; private set; }

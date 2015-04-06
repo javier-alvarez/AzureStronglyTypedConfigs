@@ -6,6 +6,14 @@
       <Setting name="ThrottlingRatio" value="0.5" />
       <Setting name="Timeout" value="60000" />
       <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="my account" />
+      <Setting name="Ids_item0" value="1" />
+      <Setting name="Ids_item1" value="2" />
+      <Setting name="Ids_item2" value="3" />
+      <Setting name="Ids_item3" value="" />
+      <Setting name="Ids_item4" value="" />
+      <Setting name="Ids_item5" value="" />
+      <Setting name="Ids_item6" value="" />
+      <Setting name="Ids_item7" value="" />
     </ConfigurationSettings>
   </Role>
 </ServiceConfiguration>

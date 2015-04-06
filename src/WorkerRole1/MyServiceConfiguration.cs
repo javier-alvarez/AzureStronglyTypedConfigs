@@ -18,7 +18,7 @@
         [AzureConfigSetting(Name = "Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString", IncludeInCSDEF = false)]
         public string MonitoringStorageAccount { get; protected set; }
 
-        [AzureConfigSetting(ExtraCapacity = 25)]
+        [AzureConfigSetting(Capacity = 15)]
         public IEnumerable<string> BlobStorageAccounts { get; protected set; }
     }
 }

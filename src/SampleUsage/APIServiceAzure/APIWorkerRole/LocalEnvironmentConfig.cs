@@ -1,5 +1,7 @@
 ﻿namespace APIWorkerRole
 {
+    using System.Collections.Generic;
+
     using AzureStronglyTypedConfigs;
 
     public class LocalEnvironmentConfig : APIServiceConfiguration, IAzureCloudServiceEnvironment
@@ -9,6 +11,7 @@
             CloudServiceConfigsFolder = "ApiServiceAzure";
             EnvironmentName = "Local";
             NumberOfInstances = 1;
+            Ids = new List<int> { 1, 2, 3 };
         }
 
         public string CloudServiceConfigsFolder { get; private set; }
