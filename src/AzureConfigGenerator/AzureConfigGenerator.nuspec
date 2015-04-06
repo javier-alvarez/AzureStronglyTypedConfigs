@@ -17,7 +17,6 @@
         </dependencies>
     </metadata>
     <files>
-        <file src="AzureConfigGenerator\bin\Release\AzureStronglyTypedConfigs.AzureConfiguration.dll" target="lib\net451" />
-        <file src="AzureConfigGenerator\bin\Release\*.*" target="tools" />
+        <file src="bin\Release\*.*" target="lib\net451" />
     </files>
 </package>
