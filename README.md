@@ -74,11 +74,14 @@
 
 	```
 4. Add After build target to the .csproj so configs are generated on build automatically every time you change the environments or configs classes
+
 	```xml
-	 <Target Name="AfterBuild">
-		<Exec Command="$(ProjectDir)$(OutDir)\AzureConfigGenerator.exe $(ProjectDir)$(OutDir)\ApiWorkerRole.dll $(SolutionDir)" IgnoreExitCode="false" />
-	  </Target>
+	<?xml version="1.0" encoding="UTF-8"?>
+	<Target Name="AfterBuild">
+	<Exec Command="$(ProjectDir)$(OutDir)\AzureConfigGenerator.exe $(ProjectDir)$(OutDir)\ApiWorkerRole.dll $(SolutionDir)" IgnoreExitCode="false" />
+	</Target>
 	```
+	
 5. Read config on the WorkerRole
 	```C#
 	 var config = new APIServiceConfiguration();
